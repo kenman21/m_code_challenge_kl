@@ -1,0 +1,10 @@
+<% if @posts.length != 0 %>
+  <h1>Your Posts</h1>
+  <% @posts.each do |post| %>
+    <h1 class="post-alias"><%= post.alias %></h1>
+    <h1 class="post-date"><%= post.created_at.strftime("%B %e, %Y") %></h1>
+    <p class="post-content"><%= post.content %></p>
+  <% end %>
+<% else %>
+  <h1 class="no-posts">You Haven't Posted Anything Yet!</h1>
+<% end %>

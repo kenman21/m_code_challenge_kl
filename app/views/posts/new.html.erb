@@ -1,0 +1,14 @@
+<div>
+  <%= form_for @post do |form|%>
+    <div class="new-post-alias">
+      <%= form.label :alias %>:<br>
+      <%= form.text_field :alias  %><br>
+    </div>
+    <div class="new-post-content">
+      <%= form.label :content%>:<br>
+      <%= form.text_area :content  %><br>
+    </div>
+    <%= form.submit "Create Post" %>
+    <%= form.hidden_field :user_id, value: session[:user_id] %>
+  <% end %>
+</div>
