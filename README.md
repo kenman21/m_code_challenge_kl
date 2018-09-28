@@ -2,10 +2,12 @@
 
 To begin, fork and clone this repository.
 
-Then run the following: 
+Navigate to the repository and then run the following: 
 
 rails db:create 
+
 rails db:migrate
+
 rails server 
 
 Open your local host in the browser to begin!
